@@ -1,0 +1,227 @@
+#about {
+  @include sectionBasics();
+  flex-wrap: wrap;
+  .content {
+    h1 {
+      @include section-heading();
+    }
+  }
+  .heading {
+    @include section-heading-style();
+  }
+  .hidden {
+    @include hidden-text();
+  }
+  .content-one {
+    @include flexEven(row);
+
+    .tech-use {
+      @include flexEven(column);
+      h1 {
+        margin-bottom: 2em;
+        font-size: 2em;
+      }
+
+      .icons {
+        @include flexEven(row);
+
+        a {
+          flex-basis: 33%;
+          margin-bottom: 5em;
+
+          span {
+            position: absolute;
+            margin-top: 10px;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            font-weight: 500;
+            color: #000;
+            border-radius: 50px;
+            box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+              0 5px 15px rgba(0, 0, 0, 0.07);
+            pointer-events: none;
+            user-select: none;
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+          }
+          &:hover {
+            span {
+              opacity: 0.9;
+            }
+          }
+        }
+
+        .html {
+          .fa-html5 {
+            color: #de4b25;
+          }
+          span {
+            top: 40%;
+            right: 82%;
+            background: #de4b25;
+            color: #fff;
+          }
+          &:hover {
+            span {
+              top:44%;
+            }
+          }
+        }
+
+        .css {
+          .fa-css3 {
+            color: #016db5;
+          }
+          span {
+            top: 40%;
+            right: 50%;
+            background: #016db5;
+            color: #fff;
+          }
+          &:hover {
+            span {
+              top: 44%;
+            }
+          }
+        }
+
+        .js {
+          .fa-js {
+            color: #df9f28;
+          }
+          span {
+            top: 40%;
+            right: 10%;
+            background: #df9f28;
+            color: #fff;
+          }
+          &:hover {
+            span {
+              top: 44%;
+            }
+          }
+        }
+
+        .bs {
+          .fa-bootstrap {
+            color: #33173e;
+          }
+          span {
+            top: 75%;
+            right: 78%;
+            background: #33173e;
+            color: #fff;
+          }
+          &:hover {
+            span {
+              top: 80%;
+            }
+          }
+        }
+
+        .jq {
+          .fa-signature {
+            color: #1a72b6;
+          }
+          span {
+            top: 70%;
+            right: 46%;
+            background: #1a72b6;
+            color: #fff;
+          }
+          &:hover {
+            span {
+              top: 78%;
+            }
+          }
+        }
+
+        .sass {
+          .fa-sass {
+            color: #c96196;
+          }
+          span {
+            top: 70%;
+            right: 13%;
+            background: #c96196;
+            color: #fff;
+          }
+          &:hover {
+            span {
+              top: 78%;
+            }
+          }
+        }
+      }
+    }
+
+    img {
+      position: relative;
+      max-width: 100%;
+      box-shadow: 10px 10px 20px #828282;
+      border-radius: 10px;
+    }
+  }
+  .content-two {
+    h1 {
+      margin-bottom: 1.5em;
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    span {
+      font-weight: 300;
+      font-size: 0.9em !important;
+      color: #fbaa33;
+    }
+    .about-buttons {
+      margin-top: 5em;
+      a {
+        padding: $btn-padd;
+        text-decoration: none;
+        color: #000;
+        border: 1px solid #000;
+        margin-right: 2em;
+
+        /*DOWN ARROW*/
+        &:hover i.down {
+          animation-play-state: running;
+        }
+        i.down {
+          position: relative;
+          margin-left: 0.5em;
+          animation: up-down-arrow 0.7s linear infinite;
+          animation-play-state: paused;
+          @keyframes up-down-arrow {
+            0% {
+              top: 0em;
+            }
+            100% {
+              top: 0.5em;
+            }
+          }
+        }
+
+        /*RIGHT ARROW*/
+        &:hover i.right {
+          animation-play-state: running;
+        }
+        i.right {
+          position: relative;
+          margin-left: 0.5em;
+          animation: left-right-arrow 0.7s linear infinite;
+          animation-play-state: paused;
+          @keyframes left-right-arrow {
+            0% {
+              left: 0em;
+            }
+            100% {
+              left: 0.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

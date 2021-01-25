@@ -1,0 +1,50 @@
+#footer {
+  
+  @include flexBtw(column);
+  padding: 2em;
+  background: #222222;
+  min-height: 25vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1 {
+    color: #fbaa33;
+    font-size: 1.7em!important;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  .social-links {
+    a {
+      font-size: 1.2em;
+      padding: 0.4em 0.7em;
+      margin-right: 1em;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5%;
+      transition: 0.3s all linear;
+
+      &:hover {
+        background: #fbaa33;
+        border: 1px solid #fbaa33;
+      }
+    }
+  }
+
+  .page-links {
+    a {
+      font-size: 1.4em;
+      color: #fff;
+      margin-right: 1em;
+      transition: 0.3s all linear;
+
+      &:hover {
+        color: #fbaa33;
+      }
+    }
+  }
+}

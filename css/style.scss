@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+/*IMPORTING SCSS FILES*/
+
+@import "variables";
+@import "functions";
+@import "header";
+@import "banner";
+@import "about";
+@import "projects";
+@import "timeline";
+@import "contact";
+@import "collaborate";
+@import "footer";
+@import "responsive00";
+@import "responsive01";
+@import "responsive02";
+@import "ipads";
+@import "laptops";
+@import "mobile-menu";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Francois One', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a,
+a:active,
+a:hover,
+a:focus,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.top-btn {
+    position: fixed;
+    font-size: 1em;
+    padding: 0.8em;
+    width: fit-content;
+    visibility: hidden;
+    right: 2em;
+    bottom: 2em;
+    color: #000;
+    background: #fbaa33;
+    z-index: 10;
+    cursor: pointer;
+    
+    i {
+        position: relative;
+    }
+    &:hover i {
+        animation: up-down 1s ease infinite;
+        @keyframes up-down {
+            0% {
+                top: 15px;
+            }
+            50% {
+                top: 10px;
+            }
+            100% {
+                top: -10px;
+            }
+        }
+    }
+}

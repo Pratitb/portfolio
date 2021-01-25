@@ -1,0 +1,52 @@
+#banner {
+  @include flexSb(column);
+  @include sectionBasics();
+  color: #fff;
+  background: #000;
+  .content-banner {
+    @include flexSb(column);
+
+    .buttons {
+      a {
+        font-size: 1.1em;
+        padding: $btn-padd;
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #fff;
+        margin: 3em 1em;
+        &:hover{
+          border: 2px solid #fbaa33;
+        }
+      }
+    }
+    .buttons i {
+      margin-right: 10px;
+    }
+    span {
+      color: #fbaa33;
+    }
+    p {
+      font-size: 1.7em;
+      padding: 1.2em;
+    }
+    h1 {
+      font-size: 3.5em;
+    }
+    .angle-dwn {
+      position: relative;
+      animation: move 1.5s linear infinite;
+
+      @keyframes move {
+        0% {
+          bottom: 0px;
+        }
+        50% {
+          bottom: -20px;
+        }
+        100% {
+          bottom: -40px;
+        }
+      }
+    }
+  }
+}

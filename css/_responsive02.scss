@@ -1,0 +1,322 @@
+/*FOR 376px TO 415px*/
+@media (min-width: 376px) and (max-width: 415px) {
+  .mobile-menu{
+    #menu{
+      min-height: 75vh!important;
+    }
+  }
+    #header {
+      height: 60px;
+      padding: 1em;
+      .owner {
+        font-size: 1em;
+      }
+      #nav {
+        display: none;
+      }
+    }
+    #banner {
+      padding: 1em 1em 1em 1em;
+      .content-banner {
+        .angle-dwn {
+          font-size: 1.8em;
+        }
+        h1 {
+          font-size: 1.6em;
+        }
+        p {
+          font-size: 1em;
+          padding: 0.8em;
+        }
+        .buttons {
+          margin: 2em 0em;
+          a {
+            margin: 0em auto;
+            margin-right: 1em;
+            padding: 0.4em;
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+    #about {
+      padding: 5em 1em 0em 1em;
+      .content {
+        h1 {
+          font-size: 2.5em;
+          margin-bottom: 1em;
+        }
+      }
+      .content-one {
+        .tech-use{
+          h1{
+            margin: 2em 0em 1em 0em;
+          }
+          .icons{
+            a{
+              font-size: 0.8em;
+              flex-basis: 26%;
+            }
+            .html{
+              span{
+                top: 39%;
+                right: 75%;
+              }
+            }
+            .html:hover{
+              span{
+                top: 52%;
+                right: 75%;
+              }
+            }
+            .css{
+              span{
+                top: 39%;
+                right: 47%;
+              }
+            }
+            .css:hover{
+              span{
+                top: 52%;
+                right: 47%;
+              }
+            }
+            .js{
+              span{
+                top: 39%;
+                right: 13%;
+              }
+            }
+            .js:hover{
+              span{
+                top: 52%;
+                right: 13%;
+              }
+            }
+            .bs{
+              span{
+                top: 70%;
+                right: 72%;
+              }
+            }
+            .bs:hover{
+              span{
+                top: 83%;
+                right: 72%;
+              }
+            }
+            .jq{
+              span{
+                top: 70%;
+                right: 43%;
+              }
+            }
+            .jq:hover{
+              span{
+                top: 83%;
+                right: 43%;
+              }
+            }
+            .sass{
+              span{
+                top: 70%;
+                right: 16%;
+              }
+            }
+            .sass:hover{
+              span{
+                top: 83%;
+                right: 16%;
+              }
+            }
+          }
+        }
+        img {
+          max-width: 80%;
+        }
+      }
+      .content-two {
+        h1 {
+          font-size: 1.8em;
+          margin: 1em 0em;
+        }
+        h2 {
+          font-size: 1.2em;
+          span {
+            font-size: 1.2em !important;
+          }
+        }
+        .about-buttons {
+          margin-top: 2em;
+          a {
+            font-size: 1em;
+            padding: 0.5em;
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+    #projects {
+      padding: 4em 1em 0em 1em;
+      .sub-project {
+        margin: 0em 0em 4em 0em;
+      }
+      .sub-project-buttons {
+        margin-top: 0.5em;
+        a {
+          padding: 0.5em;
+          font-size: 0.8em;
+        }
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      h2 {
+        font-size: 1em;
+      }
+      .owl-carousel {
+        max-width: 350px;
+      }
+    }
+    #timeline {
+      padding: 6em 0em 0em 0em;
+      .title {
+        font-size: 2.5em;
+      }
+      .timeline {
+        width: 100%;
+        ul {
+          li {
+            .content {
+              padding: 1em;
+              margin-top: 4em;
+              h1 {
+                font-size: 1.2em;
+              }
+              h2 {
+                font-size: 1em;
+              }
+              h3 {
+                font-size: 1em;
+              }
+              p {
+                font-size: 0.8em;
+              }
+              .time {
+                padding: 0.7em;
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+        &::before {
+          left: 20px;
+        }
+        li:nth-child(odd),
+        li:nth-child(even) {
+          width: 100%;
+          text-align: left;
+        }
+        li:nth-child(odd),
+        li:nth-child(even) {
+          &::before {
+            right: 0;
+            left: 14px !important;
+          }
+        }
+        li:nth-child(even) .time {
+          right: 13em;
+        }
+        li:nth-child(even) .time {
+          left: 3em !important;
+        }
+        li:nth-child(odd) .time{
+          right: 14em!important;
+        }
+        .show-more {
+          top: 0em;
+          right: -10em;
+        }
+      }
+    }
+    #collaborate {
+      padding: 0.95em;
+      max-width: 350px;
+      top: 3em;
+      p {
+        font-size: 0.7em;
+        flex-basis: 80%;
+      }
+      a {
+        font-size: 0.6em;
+        flex-basis: 20%;
+      }
+    }
+    #contact {
+      padding: 2em 1em 2em 1em;
+      min-height: 85vh;
+      .contact-form {
+        input {
+          min-width: 300px;
+          padding: 0.5em;
+          &::placeholder {
+            font-size: 0.7em;
+          }
+        }
+        textarea {
+          min-width: 300px;
+          padding: 0.5em;
+          &::placeholder {
+            font-size: 0.7em;
+          }
+        }
+        button {
+          padding: 0.8em 2em;
+          font-size: 0.8em;
+        }
+      }
+      .circle-social-icons {
+        margin: 3em 0em;
+        a {
+          font-size: 1.3em;
+          margin: 0.3em;
+          padding: 0.4em 0.6em 0.6em 0.6em;
+        }
+        .one-linkedin {
+          bottom: 0em;
+          left: 0em;
+        }
+        .extra-hash {
+          display: none;
+        }
+        .two-twitter {
+          top: 0em;
+          right: 0em;
+        }
+        .three-instagram {
+          bottom: 0em;
+          right: 0em;
+        }
+        .four-github {
+          bottom: 0em;
+          right: 0em;
+        }
+      }
+    }
+    #footer {
+      min-height: 25vh;
+      h1 {
+        font-size: 1.4em;
+      }
+      .social-links {
+        a {
+          padding: 0.3em 0.5em;
+        }
+      }
+      .page-links{
+        a{
+          font-size: 1.1em;
+        }
+      }
+    }
+  }

@@ -1,0 +1,94 @@
+#contact {
+    @include sectionBasics();
+    padding: 9em 3em;
+    @include flexEven(row);
+    background: #f4f6fa;
+    color: #000;
+
+    .circle-social-icons {
+        @include flexSb(row);
+
+        a {
+            position: relative;
+            background: #fff;
+            color: #666;
+            font-size: 1.9em;
+            padding: 0.4em 0.6em 0.5em 0.6em;
+            border-radius: 50%;
+            box-shadow: 0 0 7px rgba(46, 59, 125, 0.23);
+            transition: all 0.3s linear;
+
+            &:hover{
+                background: #fbaa33;
+                color: #fff;
+            }
+        }
+
+        .one-linkedin{
+            bottom: 2em;
+            left: 1em;
+        }
+        .extra-hash{
+            left: 1.5em;
+            bottom: 2em;
+        }
+        .two-twitter{
+            top: 1em;
+            right: 0.67em;
+        }
+        .three-instagram{
+            bottom: 5em;
+            right: 2.7em;
+        }
+        .four-github{
+            bottom: 2em;
+            right: 2.3em;
+        }
+    }
+
+    .contact-form {
+        @include flexSb(column);
+        padding: 2em;
+        background: #fff;
+
+        h1 {
+            color: #fbaa33;
+            margin-bottom: 1em;
+        }
+
+        input {
+            min-width: 700px;
+            font-size: 1em;
+            padding: 1em;
+            margin-bottom: 2em;
+            border: 1px solid #cde4da;
+
+            &::placeholder {
+                font-weight: 300 !important;
+            }
+        }
+
+        textarea {
+            font-size: 1em;
+            padding: 1.3em;
+            border: 1px solid #cde4da;
+            margin-bottom: 2em;
+            min-width: 700px;
+        }
+
+        button {
+            padding: 0.9em 2em 0.9em 2em;
+            color: #fff;
+            font-size: 1em;
+            background: #fbaa33;
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s all linear;
+            cursor: pointer;
+
+            &:hover{
+                border-radius: 0px;
+            }
+        }
+    }
+}

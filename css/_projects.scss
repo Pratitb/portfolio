@@ -1,0 +1,61 @@
+#projects {
+    @include sectionBasics();
+    @include flexSb(column);
+
+    h1 {
+        @include section-heading();
+    }
+    .heading {
+        @include section-heading-style();
+    }
+    .hidden {
+        position: absolute;
+        color: transparent !important;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.07);
+        -webkit-text-stroke-width: 1px;
+        font-size: 1.2em;
+        left: 40.5%;
+        top: 7%;
+    }
+    h2 {
+        margin-bottom: 1em;
+
+        span {
+            color: #fbaa33;
+        }
+    }
+    .built-projects {
+        @include flexEven(row);
+    }
+    .sub-project {
+        @include flexSb(column);
+        margin: 0em 2em 7em 0em;
+    }
+    .owl-carousel {
+        max-width: 700px;
+        .owl-nav {
+            display: none;
+        }
+        .owl-dots {
+            margin-top: 0.9rem !important;
+        }
+        .owl-stage-outer {
+            box-shadow: 5px 5px 15px #adadad;
+            border-radius: 10px;
+        }
+    }
+    .sub-project-buttons {
+        margin-top: 2em;
+        @include flexSb(column);
+
+        .buttons {
+            @include flexSb(row);
+        }
+        a {
+            color: #000;
+            border: 1px solid #000;
+            margin-right: 2em;
+            padding: $btn-padd;
+        }
+    }
+}

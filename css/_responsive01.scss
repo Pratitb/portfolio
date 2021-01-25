@@ -1,0 +1,332 @@
+/*FOR 361 TO 375 PHONES*/
+@media (min-width: 361px) and (max-width: 375px) {
+  .top-btn {
+    padding: 0.6em !important;
+  }
+  .mobile-menu{
+    margin-top: 0.7em!important;
+    #menu{
+      margin-top: 1.2em!important;
+      min-height: 75vh!important;
+    }
+  }
+  #header {
+    height: 60px;
+    padding: 1em;
+    #nav {
+      display: none;
+    }
+  }
+  #banner {
+    padding: 0em 1em 0em 1em;
+    .content-banner {
+      h1 {
+        font-size: 1.6em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .buttons {
+        margin: 1.5em 0em;
+        a {
+          margin: 0em 0.5em 0em 0em;
+          padding: 0.5em;
+          font-size: 1em;
+        }
+      }
+      .angle-dwn {
+        font-size: 2em;
+      }
+    }
+  }
+  #about {
+    padding: 5em 1em 0em 1em;
+    .content {
+      h1 {
+        font-size: $sec-heading-1;
+        margin-bottom: 1em;
+      }
+    }
+    .content-one {
+      img {
+        max-width: 80%;
+      }
+      .tech-use{
+        h1{
+          font-size: 1.7em;
+          margin: 2em 0em 1em 0em;
+        }
+        .icons{
+          a{
+            flex-basis: 26%;
+            margin-bottom: 3em;
+            i{
+              font-size: 3.5em;
+            }
+            span{
+              padding: 0.3em 0.7em;
+              font-size: 0.9em;
+            }
+          }
+          /*icons start*/
+          .html{
+            span{
+              right: 79%;
+              top: 32%;
+            }
+          }
+          .css{
+            span{
+              right: 48%;
+              top: 32%;
+            }
+          }
+          .js{
+            span{
+              right: 12%;
+              top: 32%;
+            }
+          }
+          .bs{
+            span{
+              right: 75%;
+              top: 67%;
+            }
+          }
+          .jq{
+            span{
+              right: 44%;
+              top: 67%;
+            }
+          }
+          .sass{
+            span{
+              right: 12%;
+              top: 67%;
+            }
+          }
+          .html:hover{
+            span{
+              top: 52%;
+              right: 79%;
+            }
+          }
+          .css:hover{
+            span{
+              top: 52%;
+              right: 47%;
+            }
+          }
+          .js:hover{
+            span{
+              top: 52%;
+            }
+          }
+          .bs:hover{
+            span{
+              top: 84%;
+              right: 73%;
+            }
+          }
+          .jq:hover{
+            span{
+              top: 84%;
+              right: 44%;
+            }
+          }
+          .sass:hover{
+            span{
+              top: 84%;
+            }
+          }
+        }
+      }
+    }
+    .content-two {
+      h1 {
+        font-size: 1.7em;
+        margin: 1em 0em;
+      }
+      h2 {
+        font-size: 1.3em;
+        line-height: 1.5;
+      }
+      span {
+        font-size: 1.2em !important;
+      }
+      .about-buttons {
+        margin-top: 2em;
+        a {
+          font-size: 0.9em;
+          padding: 0.5em;
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+  #projects {
+    padding: 5em 1em 0em 1em;
+    .sub-project {
+      margin: 0em 0em 7em 0em;
+    }
+    .hidden {
+      left: 27%;
+      top: 7%;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+    .sub-project-buttons {
+      margin-top: 1em;
+      a {
+        font-size: 0.9em;
+        padding: 0.6em;
+        margin-right: 1em;
+      }
+    }
+    h1 {
+      font-size: 2em;
+    }
+    .owl-carousel {
+      max-width: 300px;
+    }
+  }
+  #timeline {
+    padding: 5em 1em 0em 1em;
+    .title {
+      font-size: 2em;
+    }
+    .timeline {
+      width: 100%;
+
+      &::before {
+        left: 20px;
+      }
+      ul {
+        li {
+          .content {
+            padding: 1em;
+            margin-top: 4em;
+            h1 {
+              font-size: 1.2em;
+            }
+            h2 {
+              font-size: 1em;
+            }
+            h3 {
+              font-size: 0.9em;
+            }
+            p {
+              font-size: 0.8em;
+            }
+            .time {
+              padding: 0.6em;
+              font-size: 0.9em;
+            }
+          }
+          &:nth-child(odd),
+          &:nth-child(even) {
+            width: 100%;
+            text-align: left;
+          }
+          &:nth-child(odd),
+          &:nth-child(even) {
+            &::before {
+              right: 0;
+              left: 14px;
+            }
+          }
+          &:nth-child(odd) .time {
+            right: 8em;
+            left: 4em;
+          }
+          &:nth-child(even) .time {
+            left: 4em;
+            right: 8em;
+          }
+        }
+      }
+      .show-more {
+        right: -10em;
+        top: 0em;
+      }
+    }
+  }
+  #collaborate {
+    top: 2.5em;
+    padding: 1em;
+    max-width: 300px;
+    p {
+      font-size: 0.7em;
+      flex-basis: 75%;
+    }
+    a {
+      font-size: 0.6em;
+      flex-basis: 25%;
+    }
+  }
+  #contact {
+    padding: 6em 1em 3em 1em;
+    .circle-social-icons {
+      margin-bottom: 2em;
+      a {
+        font-size: 1.3em;
+        margin-right: 0.7em;
+      }
+      .one-linkedin {
+        bottom: 0em;
+        left: 0em;
+      }
+      .two-twitter {
+        top: 0em;
+        right: 0em;
+      }
+      .extra-hash {
+        display: none;
+      }
+      .three-instagram {
+        bottom: 0em;
+        right: 0em;
+      }
+      .four-github {
+        bottom: 0em;
+        right: 0em;
+      }
+    }
+    .contact-form {
+      padding: 1.5em;
+      input {
+        min-width: 300px;
+        padding: 0.5em;
+        &::placeholder {
+          font-size: 0.7em;
+        }
+      }
+      textarea {
+        min-width: 300px;
+        &::placeholder {
+          font-size: 0.7em;
+        }
+      }
+      button {
+        padding: 0.7em 1em;
+      }
+    }
+  }
+  #footer {
+    min-height: 27vh;
+    h1 {
+      font-size: 1.3em;
+    }
+    .social-links {
+      a {
+        padding: 0.3em 0.5em;
+      }
+    }
+    .page-links {
+      a {
+        font-size: 1em;
+      }
+    }
+  }
+}

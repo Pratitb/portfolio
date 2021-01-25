@@ -1,0 +1,349 @@
+/*FOR 320PX TO 360PX PHONES*/
+@media (min-width: 320px) and (max-width: 360px) {
+  #header {
+    height: 60px;
+    padding: 0.8em;
+    #nav {
+      display: none;
+    }
+    .owner {
+      font-size: 1em;
+    }
+  }
+  #banner {
+    padding: 0em 1em;
+    .content-banner {
+      .angle-dwn {
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1em;
+      }
+      h1 {
+        font-size: 1.6em;
+      }
+      .buttons {
+        margin: 2em 0em;
+        a {
+          margin-right: 0.5em;
+          padding: 0.5em;
+          font-size: 1em;
+          margin: 0em 0.7em;
+        }
+      }
+    }
+  }
+  #about {
+    padding: 5em 1em 0em 1em;
+    .content {
+      h1 {
+        font-size: $sec-heading-0;
+        margin-bottom: 1em;
+      }
+    }
+    .content-one {
+      img {
+        max-width: 80%;
+      }
+      .tech-use {
+        h1 {
+          font-size: 1.3em;
+          margin: 2em 0em;
+        }
+        .icons {
+          .html {
+            span {
+              right: 78%;
+              top: 45%;
+            }
+          }
+          .css {
+            span {
+              right: 47%;
+              top: 45%;
+            }
+          }
+          .js {
+            span {
+              top: 44%;
+            }
+          }
+          .bs {
+            span {
+              top: 72%;
+              right: 74%;
+            }
+          }
+          .jq {
+            span {
+              right: 43%;
+              top: 72%;
+            }
+          }
+          .sass {
+            span {
+              right: 14%;
+              top: 72%;
+            }
+          }
+          a {
+            flex-basis: 26%;
+            margin-bottom: 3em;
+            i {
+              font-size: 3em;
+            }
+            span {
+              font-size: 0.7em;
+            }
+          }
+          .html:hover {
+            span {
+              top: 51%;
+              right: 78%;
+            }
+          }
+          .css:hover {
+            span {
+              top: 51%;
+              right: 48%;
+            }
+          }
+          .js:hover {
+            span {
+              top: 51%;
+              right: 11%;
+            }
+          }
+          .bs:hover {
+            span {
+              top: 83%;
+              right: 75%;
+            }
+          }
+          .jq:hover {
+            span {
+              top: 83%;
+              right: 44%;
+            }
+          }
+          .sass:hover {
+            span {
+              top: 83%;
+              right: 14%;
+            }
+          }
+        }
+      }
+    }
+    .content-two {
+      h1 {
+        font-size: 1.3em;
+        margin: 1em 0em;
+        span {
+          font-size: 1.4em !important;
+        }
+      }
+      h2 {
+        font-size: 1.2em;
+        line-height: 1.5;
+        span {
+          font-size: 1em !important;
+        }
+      }
+      .about-buttons {
+        margin: 1.5em 0em;
+        a {
+          font-size: 0.9em;
+          padding: 0.6em;
+          margin-right: 0.3em;
+        }
+      }
+    }
+  }
+  #projects {
+    padding: 5em 1em 0em 1em;
+    .sub-project {
+      margin: 0em 0em 5em 0em;
+    }
+    .hidden {
+      left: 29%;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    .owl-carousel {
+      max-width: 250px !important;
+    }
+    .sub-project-buttons {
+      margin-top: 1em;
+      h2 {
+        font-size: 1em;
+      }
+      a {
+        padding: 0.5em;
+        font-size: 0.8em;
+        margin-right: 1em;
+      }
+    }
+  }
+  #timeline {
+    padding: 5em 1em 0em 1em;
+    .title {
+      font-size: 2em;
+    }
+    .timeline {
+      width: 100%;
+      padding: 0em;
+      &::before {
+        left: 20px;
+      }
+      ul {
+        li {
+          .content {
+            padding: 1em;
+            margin: 3em 0em;
+            h1 {
+              font-size: 1.2em;
+            }
+            h2 {
+              font-size: 1em;
+            }
+            h3 {
+              font-size: 0.9em;
+            }
+            p {
+              font-size: 0.8em;
+            }
+            .time {
+              padding: 0.7em;
+              font-size: 0.9em;
+            }
+          }
+          &:nth-child(odd),
+          &:nth-child(even) {
+            &::before {
+              right: 0;
+              left: 14px;
+            }
+          }
+          &:nth-child(odd),
+          &:nth-child(even) {
+            width: 100%;
+            text-align: left;
+          }
+          &:nth-child(odd) .time {
+            right: 5em;
+            left: 3em;
+          }
+          &:nth-child(even) .time {
+            left: 3em;
+            right: 5em;
+          }
+        }
+      }
+      .show-more {
+        z-index: 1;
+        right: -8em;
+        top: 0em;
+        padding: 0.6em;
+        font-size: 0.8em;
+      }
+    }
+  }
+  #collaborate {
+    padding: 1em;
+    max-width: 280px;
+    top: 2.5em;
+    p {
+      font-size: 0.6em;
+      flex-basis: 65%;
+    }
+    a {
+      font-size: 0.65em;
+      flex-basis: 30%;
+    }
+  }
+  #contact {
+    padding: 5em 1em 2em 1em;
+    .circle-social-icons {
+      margin-bottom: 1em;
+      a {
+        font-size: 1.2em;
+        margin-right: 0.9em;
+      }
+      .one-linkedin {
+        bottom: 0em;
+        left: 0em;
+      }
+      .two-twitter {
+        top: 0em;
+        right: 0em;
+      }
+      .extra-hash {
+        display: none;
+      }
+      .three-instagram {
+        bottom: 0em;
+        right: 0em;
+      }
+      .four-github {
+        bottom: 0em;
+        right: 0em;
+      }
+    }
+    .contact-form {
+      padding: 0.8em;
+      input {
+        min-width: 250px;
+        padding: 0.5em;
+        &::placeholder {
+          font-size: 0.7em;
+        }
+      }
+      textarea {
+        min-width: 250px!important;
+        padding: 0.5em;
+        &::placeholder {
+          font-size: 0.7em;
+        }
+      }
+      button {
+        padding: 0.5em 1em;
+        font-size: 1em;
+      }
+    }
+  }
+  #footer {
+    min-height: 25vh;
+    padding: 1em;
+    h1 {
+      font-size: 1.4em;
+    }
+    .social-links {
+      a {
+        font-size: 1em;
+        padding: 0.2em 0.5em;
+      }
+    }
+    .page-links {
+      a {
+        font-size: 1em;
+      }
+    }
+  }
+  .top-btn {
+    padding: 0.5em 0.7em !important;
+    font-size: 0.9em !important;
+    right: 1.4em!important;
+  }
+  .mobile-menu{
+      #menu{
+          min-height: 75vh!important;
+          li{
+              a{
+                  font-size: 2.3em!important;
+              }
+          }
+      }
+  }
+}

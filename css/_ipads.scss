@@ -1,0 +1,215 @@
+/*FOR iPad Pro and iPad*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  #banner {
+    min-height: 100vh;
+  }
+  #about {
+    padding: 9em 1em 0em 1em;
+    .content{
+      h1{
+        margin-bottom: 1em;
+      }
+    }
+    .content-one {
+      img {
+        max-width: 55%;
+      }
+      .tech-use{
+        h1{
+          margin: 2em 0em;
+        }
+        .icons{
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          a{
+            flex-basis: initial;
+            margin: 0em 2.5em 0em 0em;
+            &:hover{
+              span{
+                top: 96%!important;
+              }
+            }
+          }
+          .html{
+            span{
+              top: 68%;
+              right: 90%;
+            }
+          }
+          .css{
+            span{
+              top: 68%;
+              right: 75%;
+            }
+          }
+          .js{
+            span{
+              top: 68%;
+              right: 56%;
+            }
+          }
+          .bs{
+            span{
+              top: 68%;
+              right: 41%;
+            }
+          }
+          .jq{
+            span{
+              top: 68%;
+              right: 26%;
+            }
+          }
+          .sass{
+            span{
+              top: 68%;
+              right: 8%;
+            }
+          }
+        }
+      }
+    }
+    .content-two {
+      h1 {
+        font-size: 2em;
+        margin: 2em 0em 1em 0em;
+      }
+      h2 {
+        font-size: 1.5  em;
+      }
+      .about-buttons {
+        margin-top: 3em;
+        a {
+          padding: 0.8em;
+        }
+      }
+    }
+  }
+  #projects {
+    .owl-carousel {
+      max-width: 500px;
+    }
+    .hidden {
+      left: 33%;
+      top: 4%;
+    }
+  }
+  #timeline {
+    padding: 6em 0em 0em 0em;
+    .title {
+      font-size: 2.5em;
+    }
+    .timeline {
+      width: 100%;
+      ul {
+        li {
+          .content {
+            padding: 1em;
+            margin-top: 4em;
+            h1 {
+              font-size: 1.2em;
+            }
+            h2 {
+              font-size: 1em;
+            }
+            h3 {
+              font-size: 1em;
+            }
+            p {
+              font-size: 0.8em;
+            }
+            .time {
+              padding: 0.7em;
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+      &::before {
+        left: 20px;
+      }
+      li:nth-child(odd),
+      li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+      }
+      li:nth-child(odd),
+      li:nth-child(even) {
+        &::before {
+          right: 0;
+          left: 14px !important;
+        }
+      }
+      li:nth-child(even) .time {
+        right: 37em;
+      }
+      li:nth-child(even) .time {
+        left: 5em !important;
+      }
+      li:nth-child(odd) .time {
+        right: 38em !important;
+      }
+      .show-more {
+        top: 0em;
+        right: -10em;
+      }
+    }
+  }
+
+  #collaborate {
+    max-width: 600px;
+    padding: 1.3em;
+    p {
+      font-size: 1.1em;
+      line-height: initial;
+      letter-spacing: initial;
+      flex-basis: 80%;
+    }
+    a {
+      font-size: 1em;
+      padding: 0.8em;
+      flex-basis: 20%;
+    }
+  }
+  #contact {
+    .circle-social-icons{
+      a{
+        margin-right: 0.5em;
+      }
+      .one-linkedin{
+        bottom: 0em;
+        left: 0em;
+      }
+      .extra-hash{
+        display: none;
+      }
+      .two-twitter{
+        top: 0em;
+        right: 0em;
+      }
+      .three-instagram{
+        bottom: 0em;
+        right: 0em;
+      }
+      .four-github{
+        bottom: 0em;
+        right: 0em;
+      }
+    }
+    .contact-form {
+      input {
+        min-width: 400px;
+      }
+      textarea {
+        min-width: 400px;
+      }
+    }
+  }
+  #footer {
+    min-height: 25vh;
+  }
+  .top-btn{
+    width: 2.4em!important;
+  }
+}

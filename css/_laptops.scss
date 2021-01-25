@@ -1,0 +1,136 @@
+/*FOR MEDIUM, HI-DPI LAPTOPS*/
+@media (min-width: 1025px) and (max-width: 1440px) {
+    #header {
+      .owner {
+        font-size: 1.5em;
+      }
+      #nav-links {
+        font-size: 0.8em;
+        &:hover {
+          height: 30px;
+        }
+      }
+    }
+    #banner {
+      .content-banner {
+        p {
+          font-size: 1em;
+        }
+        h1 {
+          font-size: 2.2em;
+        }
+  
+        .buttons {
+          a {
+            font-size: 0.9em !important;
+            padding: 0.5em !important;
+          }
+        }
+      }
+    }
+  
+    #about {
+      padding: 9em 0em 0em 0em;
+      .content {
+        .hidden {
+          left: 36%;
+          top: 16%;
+        }
+      }
+      .content-one {
+        img {
+          max-width: 25%;
+        }
+        .tech-use{
+          h1{
+            font-size: 1.5em;
+          }
+        }
+      }
+      .content-two {
+        h1 {
+          font-size: 1.5em;
+        }
+        h2 {
+          font-size: 1.3em;
+        }
+        .about-buttons {
+          margin-top: 3em;
+          a {
+            font-size: 0.8em;
+            padding: 0.8em;
+          }
+        }
+      }
+    }
+    #projects {
+      h2 {
+        font-size: 1.5em;
+      }
+      .owl-carousel {
+        max-width: 500px;
+      }
+      .hidden {
+        left: 36%;
+        top: 8%;
+      }
+      .buttons {
+        a {
+          font-size: 1em;
+          padding: 0.6em;
+        }
+      }
+    }
+    #timeline{
+      padding: 9em 3em 3em 3em;
+    }
+    #collaborate {
+      top: 3em;
+      padding: 2em;
+      max-width: 800px;
+      p {
+        font-size: 1em;
+        flex-basis: 80%;
+      }
+      a {
+        text-align: center;
+        font-size: 1em;
+        padding: 0.7em 0.1em 0.7em 0.1em;
+        flex-basis: 20%;
+      }
+    }
+    #contact {
+      .contact-form {
+        input {
+          min-width: 500px;
+          padding: 0.6em;
+        }
+        textarea {
+          min-width: 500px;
+        }
+        button {
+          font-size: 1em;
+          padding: 0.5em 1em;
+        }
+      }
+    }
+    #footer {
+      min-height: 25vh;
+  
+      h1 {
+        font-size: 1.7em;
+      }
+      .social-links{
+        a{
+          font-size: 1.4em;
+          padding: 0.2em 0.5em;
+        }
+      }
+      .page-links {
+        a {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+  

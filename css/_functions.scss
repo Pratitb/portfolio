@@ -1,0 +1,53 @@
+@mixin section-heading {
+    text-align: center;
+    display: block;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-size: 3.5em;
+}
+
+@mixin section-heading-style {
+    color: transparent !important;
+    -webkit-text-stroke-color: #fbaa33;
+    -webkit-text-stroke-width: 3px;
+}
+
+@mixin hidden-text {
+    position: absolute;
+    color: transparent !important;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.07);
+    -webkit-text-stroke-width: 1px;
+    font-size: 1.2em;
+    left: 41%;
+    top: 12%;
+}
+
+@mixin flexEven($direction) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+}
+
+@mixin flexBtw($direction) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+}
+
+@mixin flexSb($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+}
+
+@mixin sectionBasics {
+    position: relative;
+    min-height: 100vh;
+    padding: 9em 3em 0em 3em;
+}
